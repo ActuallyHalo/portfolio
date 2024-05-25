@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>webdev(contact)</title>
+    <style>
+        html,
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            background-color: #273746;
+            font-family: Courier New, Courier, monospace;
+            color: #D5D8DC;
+        }
+
+        .navbar {
+            background: #1a1a2c;
+            overflow: hidden;
+        }
+
+        .navbar__content {
+            padding: 16px;
+            max-width: 1000px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            font-size: 20px;
+        }
+
+            .navbar__content li {
+                margin-right: 20px;
+            }
+
+                .navbar__content li a {
+                    color: #D5D8DC;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+
+                    .navbar__content li a:hover {
+                        background-color: #555;
+                        color: white;
+                    }
+
+        @media screen and (max-width: 768px) {
+            .navbar__content {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0;
+            }
+
+                .navbar__content li {
+                    margin: 10px 0;
+                }
+        }
+
+        table {
+            font-family: Courier New, Courier, monospace;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td, th {
+            font-family: Courier New, Courier, monospace;
+            border: 1px solid #566573;
+            text-align: left;
+            padding: 8px;
+        }
+
+        table td:last-child {
+            font-family: Courier New, Courier, monospace;
+            width: 100%;
+        }
+
+        tr:nth-child(even) {
+            font-family: Courier New, Courier, monospace;
+            background-color: #273746;
+        }
+
+        tr:nth-child(odd) {
+            font-family: Courier New, Courier, monospace;
+            background-color: #566573;
+        }
+
+        input[type=text] {
+            font-family: Courier New, Courier, monospace;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 25px
+        }
+
+        input[type=submit] {
+            font-family: Courier New, Courier, monospace;
+            width: 40%;
+            text-align: center;
+        }
+
+        .container {
+            font-family: Courier New, Courier, monospace;
+            border-radius: 5px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="navbar__content">
+            <li><a class="active" href="webdev(home).html"><strong>Home</strong></a></li>
+            <li><a href="webdev(videos).html"><strong>Videos</strong></a></li>
+            <li><a href="webdev(about).html"><strong>About</strong></a></li>
+            <li><a href="webdev(tutorials).html"><strong>Tutorials</strong></a></li>
+            <li><a href="webdev(contact).html"><strong>Contact</strong></a></li>
+        </ul>
+    </div>
+
+    <h1>Contact ActuallyHalo</h1>
+    <a href="https://www.youtube.com/@HaloTech.">
+        <img src="yttransparent.png" width="75" height="75" />
+    </a>
+    <a href="https://discord.gg/DPWHbnGF4N">
+        <img src="dctransparent.png" width="75" height="75" />
+    </a>
+    <div class="container">
+        <form>
+            <label for="fname">Forename</label>
+            <input type="text" id="fname" placeholder="First Name..."/>
+
+            <label for="sname">Surname</label>
+            <input type="text" id="sname" placeholder="Your Last Name..." />
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Your Email Address..." />
+
+            <label for="continent">Continent</label>
+            <select id="continent">
+                <option value="europe">Europe</option>
+                <option value="oceania">Oceania</option>
+                <option value="asia">Asia</option>
+                <option value="na">North America</option>
+                <option value="sa">South America</option>
+                <option value="africa">Africa</option>
+                <option value="antarctica">Antarctica</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Ask us anything..." />
+
+            <input type="submit" id="submit" value="Submit">
+       </form>
+    </div>
+</body>
+</html>

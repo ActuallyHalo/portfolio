@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>webdev(about)</title>
+    <style>
+        html,
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            background-color: #273746;
+            font-family: Courier New, Courier, monospace;
+            color: #D5D8DC;
+        }
+
+        .navbar {
+            background: #1a1a2c;
+            overflow: hidden;
+        }
+
+        .navbar__content {
+            padding: 16px;
+            max-width: 1000px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            font-size: 20px;
+        }
+
+            .navbar__content li {
+                margin-right: 20px;
+            }
+
+                .navbar__content li a {
+                    color: #D5D8DC;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+
+                    .navbar__content li a:hover {
+                        background-color: #555;
+                        color: white;
+                    }
+
+        @media screen and (max-width: 768px) {
+            .navbar__content {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0;
+            }
+
+                .navbar__content li {
+                    margin: 10px 0;
+                }
+        }
+
+        table {
+            font-family: Courier New, Courier, monospace;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td, th {
+            border: 1px solid #566573;
+            text-align: left;
+            padding: 8px;
+        }
+
+        table td:last-child {
+            width: 100%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #273746;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #566573;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="navbar__content">
+            <li><a class="active" href="webdev(home).html"><strong>Home</strong></a></li>
+            <li><a href="webdev(videos).html"><strong>Videos</strong></a></li>
+            <li><a href="webdev(about).html"><strong>About</strong></a></li>
+            <li><a href="webdev(tutorials).html"><strong>Tutorials</strong></a></li>
+            <li><a href="webdev(contact).html"><strong>Contact</strong></a></li>
+        </ul>
+    </div>
+
+    <h1>About ActuallyHalo</h1>
+
+    <h2>YouTube start to present</h2>
+    <p>ActuallyHalo started his channel on the 20 November 2023. He did have another channel before but it wasn't how he thought it would be. With 256 subscribers at the time of writing, he is really starting to grow.</p>
+</body>
+</html>
